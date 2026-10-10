@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<!-- Google AdSense: site-wide publisher script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8072233087398262" crossorigin="anonymous"></script>
+<title>About Us | SML Property Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+  --primary: #0066cc;
+  --primary-hover: #0052a3;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --radius: 12px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--text-main); line-height: 1.6; }
+
+header { background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1280px; margin: 0 auto; padding: 12px 24px; }
+
+/* BRAND IMAGE LOGO STYLING */
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.app-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+nav ul { list-style: none; display: flex; gap: 24px; }
+nav a { color: #94a3b8; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition); }
+nav a:hover, nav a.active { color: #fff; }
+
+.inner-hero {
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center; color: white; padding: 80px 24px; text-align: center;
+}
+.inner-hero h1 { font-size: 2.75rem; font-weight: 700; margin-bottom: 15px; }
+.inner-hero p { font-size: 1.1rem; color: #94a3b8; max-width: 600px; margin: 0 auto; }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 80px 24px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; margin-bottom: 80px; }
+.content-block h2 { font-size: 2rem; color: var(--dark); margin-bottom: 20px; position: relative; }
+.content-block h2::after { content: ''; position: absolute; left: 0; bottom: -6px; width: 50px; height: 3px; background: var(--primary); }
+.content-block p { margin-bottom: 20px; color: var(--text-main); font-size: 1.05rem; }
+.image-block img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-lg); object-fit: cover; height: 400px; }
+
+/* Timeline Framework */
+.timeline-section { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 80px 24px; }
+.timeline { position: relative; max-width: 900px; margin: 40px auto 0 auto; padding: 20px 0; }
+.timeline::after { content: ''; position: absolute; width: 2px; background: var(--border); top: 0; bottom: 0; left: 50%; margin-left: -1px; }
+.timeline-item { padding: 10px 40px; position: relative; background: inherit; width: 50%; }
+.timeline-item::after { content: ''; position: absolute; width: 16px; height: 16px; right: -8px; background-color: #fff; border: 4px solid var(--primary); top: 15px; border-radius: 50%; z-index: 1; }
+.left { left: 0; text-align: right; }
+.right { left: 50%; }
+.right::after { left: -8px; }
+.timeline-content { padding: 20px; background: var(--light); position: relative; border-radius: 6px; border: 1px solid var(--border); }
+.timeline-content h3 { color: var(--primary); font-size: 1.25rem; margin-bottom: 5px; }
+
+/* Corporate Team Layout Grid */
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+.team-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); }
+.team-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.team-img { width: 100%; height: 280px; object-fit: cover; background: #cbd5e1; }
+.team-info { padding: 20px; text-align: center; }
+.team-info h4 { font-size: 1.15rem; color: var(--dark); margin-bottom: 5px; }
+.team-info span { font-size: 0.85rem; color: var(--primary); font-weight: 600; display: block; margin-bottom: 10px; }
+.team-info p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.4; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 20px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: var(--transition); }
+.btn:hover { background: var(--primary-hover); }
+
+footer { background: #0f172a; color: #64748b; padding: 60px 24px 30px 24px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+.footer-col h4 { color: #fff; font-size: 1.1rem; margin-bottom: 20px; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a { color: #94a3b8; text-decoration: none; }
+.footer-col ul li a:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; margin-top: 40px; text-align: center; font-size: 0.9rem; }
+
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; gap: 30px; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .timeline::after { left: 31px; }
+  .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+  .timeline-item::after { left: 22px; }
+  .left { text-align: left; }
+  .right { left: 0; }
+}
+@media (max-width: 600px) {
+  .team-grid, .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="image/logo.png" class="app-logo" alt="SML Property Management Logo">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="inner-hero">
+  <h1>Corporate Operational Legacy</h1>
+  <p>Fusing engineering oversight protocols with high-fidelity real estate asset alignment frameworks since inception.</p>
+</section>
+
+<div class="container">
+  <div class="grid-2">
+    <div class="content-block">
+      <h2>Institutional Philosophy & Vision</h2>
+      <p>SML Property Management operates under a singular directive: to introduce unmatched data-driven execution mechanics into luxury facility and community management structures. We don't simply maintain real estate assets; we actively engineer risk out of property investments through systematic compliance tracking.</p>
+      <p>By treating each property as a multi-layered ecosystem comprising structural engineering elements, capital accounting models, and tenant experience vectors, we safeguard your multi-generational portfolios against market fluctuations.</p>
+      <p>Our commitment extends beyond daily property operations to full lifecycle optimization, asset appreciation loops, and real-time capital allocation modeling.</p>
+    </div>
+    <div class="image-block">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="SML Headquarters Corporate Boardroom">
+    </div>
+  </div>
+
+  <div class="grid-2" style="direction: rtl;">
+    <div class="content-block" style="direction: ltr;">
+      <h2>Risk-Averse Property Asset Defense</h2>
+      <p>Our operational management vectors utilize specialized technological architectures designed to identify structural inefficiencies and tenant turnover patterns long before they impact cash flow performance metrics.</p>
+      <p>From advanced background verification parameters running cross-checks across multiple legal jurisdictions to automated rent collection networks, our systems maintain institutional stability across all portfolios.</p>
+      <p>SML Property Management remains a verified market leader in high-end structural asset defense mechanisms, managing premium estates with complete corporate transparency.</p>
+      <a href="contact.html" class="btn" style="margin-top:15px;">Review Escrow Frameworks</a>
+    </div>
+    <div class="image-block">
+      <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" alt="SML Corporate Operations Floor">
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<section class="timeline-section">
+  <div class="container" style="padding-top:0; padding-bottom:0;">
+    <h2 style="font-size: 2rem; color: var(--dark); text-align:center; margin-bottom:10px;">Our Structural Growth Track</h2>
+    <p style="text-align:center; color:var(--text-muted); max-width:600px; margin:0 auto 40px auto;">A decade of building reliable corporate infrastructure, scaling across prime real estate markets, and expanding investor portfolios.</p>
+    
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2016 — Organizational Inception</h3>
+          <p>Established corporate headquarters focusing on premium residential property maintenance configurations in Florida metro core zones.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2019 — $250M AUM Portfolio Scale</h3>
+          <p>Expanded structural operations into complex high-rise commercial structures and automated luxury asset distribution systems.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2022 — Integrated Technology Layer</h3>
+          <p>Deployed proprietary real-time financial tracking systems, digital escrow protocols, and background underwriting algorithms.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2026 — Market Leadership</h3>
+          <p>Rebranded fully to SML Property Management, overseeing premier institutional real estate frameworks nationwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <h2 style="font-size: 2rem; color: var(--dark); text-align:center; margin-bottom:10px;">Executive Management Directorate</h2>
+  <p style="text-align:center; color:var(--text-muted); max-width:600px; margin:0 auto 40px auto;">Our multi-disciplinary team brings together decades of experience in real estate law, civil architecture, capital risk containment, and technology integrations.</p>
+  
+  <div class="team-grid">
+    <div class="team-card">
+      <img class="team-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Executive Director Profile">
+      <div class="team-info">
+        <h4>Harrison Vance, Esq.</h4>
+        <span>Chief Executive Director</span>
+        <p>Oversees primary corporate strategy arrays and multi-jurisdictional legal risk mitigation compliance channels.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Chief Financial Analyst Profile">
+      <div class="team-info">
+        <h4>Dr. Elena Rostova</h4>
+        <span>Chief Financial Analyst</span>
+        <p>Directs real-time capital allocation modeling, banking structures, and automated owner distribution pipelines.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Chief of Civil Engineering Profile">
+      <div class="team-info">
+        <h4>Marcus Thorne, P.E.</h4>
+        <span>Chief of Facility Engineering</span>
+        <p>Manages structural lifecycle analysis, physical preventative maintenance workflows, and emergency responses.</p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Director of Underwriting Profile">
+      <div class="team-info">
+        <h4>Sarah Jenkins</h4>
+        <span>Director of Underwriting</span>
+        <p>Manages high-fidelity tenant screening matrix parameters and automated legal placement workflows.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="logo-container" style="margin-bottom:20px;">
+        <img src="image/logo.png" class="app-logo" alt="SML Property Management Logo">
+      </a>
+      <p style="font-size:0.9rem; line-height:1.8;">Enterprise-grade real estate management systems securing luxury portfolios, minimizing architectural operational risks, and maximizing long-term asset appreciation loops across institutional fields.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Our Portfolio Areas</h4>
+      <ul>
+        <li><a href="services.html">Residential Core</a></li>
+        <li><a href="services.html">Commercial Logistics</a></li>
+        <li><a href="services.html">Industrial Facilities</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Corporate Systems</h4>
+      <ul>
+        <li><a href="about.html">Executive Team</a></li>
+        <li><a href="services.html">Asset Engineering</a></li>
+        <li><a href="contact.html">Escrow Verification</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; @ 2026 SML Property Management Services. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

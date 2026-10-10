@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<!-- Google AdSense: site-wide publisher script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8072233087398262" crossorigin="anonymous"></script>
+<title>SML Property Management | Premium Property & Facility Management</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+  --primary: #0066cc;
+  --primary-hover: #0052a3;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --radius: 12px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
+
+/* BRAND IMAGE LOGO STYLING */
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.app-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+nav ul { list-style: none; display: flex; gap: 24px; }
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+nav a:hover, nav a.active { color: #fff; }
+
+/* End-to-End Premium Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.85) 100%);
+  z-index: 2;
+}
+
+.hero-content-overlay {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  z-index: 3;
+}
+
+.hero-content-overlay p {
+  font-size: 1.35rem;
+  color: #f1f5f9;
+  font-weight: 400;
+  margin-bottom: 35px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Standalone Section directly under Hero */
+.hero-sub-bar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.hero-sub-bar h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+/* Structural Layout Components */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+
+/* Feature Grid Columns */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.feature-box {
+  background: var(--card-bg);
+  padding: 40px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  font-size: 1.35rem;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+/* Property Grid Layout: 4 Items Per Row */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: #cbd5e1;
+}
+
+.card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.card:hover .card-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.card-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: var(--dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  height: 44px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card .price {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn:hover { background: var(--primary-hover); }
+.btn-secondary {
+  background: #f1f5f9;
+  color: var(--dark);
+}
+.btn-secondary:hover { background: #e2e8f0; }
+
+.hidden { display: none !important; }
+
+/* Testimonials Layout Grid */
+.testimonials-section {
+  background: #0f172a;
+  color: #fff;
+  padding: 80px 24px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1280px;
+  margin: 40px auto 0 auto;
+}
+
+.testimonial-card {
+  background: rgba(255,255,255,0.05);
+  padding: 35px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+/* FAQ Component Layout Styles */
+.faq-container {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+}
+
+.faq-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px 25px;
+  font-weight: 600;
+  color: var(--dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 25px;
+  color: var(--text-main);
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 0 25px 20px 25px;
+}
+
+/* Detail View Layout Frameworks */
+.details-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.gallery {
+  width: 100%;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.gallery-controls .btn-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--dark);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  pointer-events: auto;
+}
+
+.gallery-controls .btn-circle:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+.details-sidebar {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.details-sidebar h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.details-sidebar .price-tag {
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.details-sidebar p {
+  color: var(--text-main);
+  margin-bottom: 25px;
+}
+
+.specs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: var(--light);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.specs-item {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer {
+  background: #0f172a;
+  color: #64748b;
+  padding: 60px 24px 30px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 40px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a { color: #94a3b8; text-decoration: none; transition: var(--transition); }
+.footer-col ul li a:hover { color: #fff; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Structural Breaks */
+@media (max-width: 1100px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .features-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .cards, .features-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-sub-bar h2 { font-size: 1.6rem; }
+  .details-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .cards, .features-grid, .testimonials-grid, .footer-grid { grid-template-columns: 1fr; }
+  nav { flex-direction: column; gap: 15px; }
+  .hero { min-height: 420px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="image/logo.png" class="app-logo" alt="SML Property Management Logo">
+    </a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="home">
+  <section class="hero">
+    <img class="hero-bg-image" src="image/hero.png" alt="Luxury Mansion Rendering">
+    <div class="hero-overlay"></div>
+    <div class="hero-content-overlay">
+          <p>PROFESSIONAL PROPERTY MANAGEMENT SERVICES.</p>
+      <p>Discover luxury residential properties curated across prime locations with world-class architecture and modern automation.</p>
+      <a href="contact.html" class="btn" style="width: auto; padding: 15px 30px; display: inline-flex;">Schedule Structural Review</a>
+    </div>
+  </section>
+
+  <div class="hero-sub-bar">
+    <h2> EXCEPTIONAL PROPERTY MANAGEMENT SOLUTIONS  </h2>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">Why SML Management Excels</h2>
+    <p class="section-subtitle">We merge rigorous operational control structures with luxury real estate hospitality, serving elite investors globally.</p>
+    <div class="features-grid">
+      <div class="feature-box">
+        <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Asset Value Maximization</h3>
+        <p>Through systematic preventive maintenance schedules, structural lifecycle modeling, and vendor oversight matrix execution, we protect long-term capital yields.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon"><i class="fa-solid fa-chart-pie"></i></div>
+        <h3>Transparent Financial Reporting</h3>
+        <p>Real-time accounting ledger portals tracking monthly cashflows, comprehensive balance statements, automated invoicing, and legal corporate distributions.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+        <h3>Rigorous Tenant Underwriting</h3>
+        <p>Advanced screening algorithms examining multi-jurisdictional records, debt-to-income liquidity ratios, structural background reports, and verified histories.</p>
+      </div>
+    </div>
+
+</section>
+
+    <h2 class="section-title">Available Premium Properties</h2>
+    <p class="section-subtitle">Browse through our active portfolio of verified residential and commercial assets available across prime metropolitan zones.</p>
+    
+    <div class="cards">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">For Sale</span>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="House 1">
+        </div>
+        <div class="card-content">
+          <h3>Modern 4-Bedroom Duplex</h3>
+          <div class="price">$550,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 4 Baths</span></div>
+          <button class="btn" onclick="showHouse('h1')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">New Build</span>
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=400&q=80" alt="House 2">
+        </div>
+        <div class="card-content">
+          <h3>3-Bedroom Bungalow</h3>
+          <div class="price">$295,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 3 Beds</span><span><i class="fa-solid fa-bath"></i> 3 Baths</span></div>
+          <button class="btn" onclick="showHouse('h2')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Popular</span>
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=400&q=80" alt="House 3">
+        </div>
+        <div class="card-content">
+          <h3>Mini Flat Apartment</h3>
+          <div class="price">$115,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 1 Bed</span><span><i class="fa-solid fa-bath"></i> 1 Bath</span></div>
+          <button class="btn" onclick="showHouse('h3')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Luxury</span>
+          <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=400&q=80" alt="House 4">
+        </div>
+        <div class="card-content">
+          <h3>Luxury Penthouse</h3>
+          <div class="price">$780,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 3 Beds</span><span><i class="fa-solid fa-bath"></i> 4 Baths</span></div>
+          <button class="btn" onclick="showHouse('h4')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Serviced</span>
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=400&q=80" alt="House 5">
+        </div>
+        <div class="card-content">
+          <h3>Serviced 2-Bedroom Flat</h3>
+          <div class="price">$225,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 2 Beds</span><span><i class="fa-solid fa-bath"></i> 2 Baths</span></div>
+          <button class="btn" onclick="showHouse('h5')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Budget</span>
+          <img src="https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=400&q=80" alt="House 6">
+        </div>
+        <div class="card-content">
+          <h3>Self-Contain Studio</h3>
+          <div class="price">$55,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 1 Bed</span><span><i class="fa-solid fa-bath"></i> 1 Bath</span></div>
+          <button class="btn" onclick="showHouse('h6')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Premium</span>
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80" alt="House 7">
+        </div>
+        <div class="card-content">
+          <h3>5-Bedroom Fully Detached</h3>
+          <div class="price">$980,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 5 Beds</span><span><i class="fa-solid fa-bath"></i> 6 Baths</span></div>
+          <button class="btn" onclick="showHouse('h7')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Modern</span>
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=400&q=80" alt="House 8">
+        </div>
+        <div class="card-content">
+          <h3>Terrace Duplex</h3>
+          <div class="price">$460,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 4 Baths</span></div>
+          <button class="btn" onclick="showHouse('h8')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Smart Home</span>
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=400&q=80" alt="House 9">
+        </div>
+        <div class="card-content">
+          <h3>Executive Smart Mansion</h3>
+          <div class="price">$1,550,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 6 Beds</span><span><i class="fa-solid fa-bath"></i> 7 Baths</span></div>
+          <button class="btn" onclick="showHouse('h9')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Trending</span>
+          <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=400&q=80" alt="House 10">
+        </div>
+        <div class="card-content">
+          <h3>Semi-Detached 4-Bedroom</h3>
+          <div class="price">$580,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 5 Baths</span></div>
+          <button class="btn" onclick="showHouse('h10')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Loft</span>
+          <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=400&q=80" alt="House 11">
+        </div>
+        <div class="card-content">
+          <h3>3-Bedroom Loft Apartment</h3>
+          <div class="price">$340,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 3 Beds</span><span><i class="fa-solid fa-bath"></i> 3 Baths</span></div>
+          <button class="btn" onclick="showHouse('h11')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Cozy</span>
+          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=400&q=80" alt="House 12">
+        </div>
+        <div class="card-content">
+          <h3>Cozy 1-Bedroom Apartment</h3>
+          <div class="price">$145,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 1 Bed</span><span><i class="fa-solid fa-bath"></i> 1 Bath</span></div>
+          <button class="btn" onclick="showHouse('h12')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Elite</span>
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=400&q=80" alt="House 13">
+        </div>
+        <div class="card-content">
+          <h3>Waterfront Luxury Villa</h3>
+          <div class="price">$2,400,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 5 Beds</span><span><i class="fa-solid fa-bath"></i> 6 Baths</span></div>
+          <button class="btn" onclick="showHouse('h13')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Classic</span>
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80" alt="House 14">
+        </div>
+        <div class="card-content">
+          <h3>Classic 4-Bedroom Bungalow</h3>
+          <div class="price">$310,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 3 Baths</span></div>
+          <button class="btn" onclick="showHouse('h14')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Modern</span>
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" alt="House 15">
+        </div>
+        <div class="card-content">
+          <h3>Contemporary 3-Bedroom Flat</h3>
+          <div class="price">$260,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 3 Beds</span><span><i class="fa-solid fa-bath"></i> 3 Baths</span></div>
+          <button class="btn" onclick="showHouse('h15')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Duplex</span>
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=400&q=80" alt="House 16">
+        </div>
+        <div class="card-content">
+          <h3>Premium 2-Bedroom Maisonette</h3>
+          <div class="price">$395,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 2 Beds</span><span><i class="fa-solid fa-bath"></i> 3 Baths</span></div>
+          <button class="btn" onclick="showHouse('h16')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Family</span>
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=400&q=80" alt="House 17">
+        </div>
+        <div class="card-content">
+          <h3>Suburban Family House</h3>
+          <div class="price">$425,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 4 Baths</span></div>
+          <button class="btn" onclick="showHouse('h17')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Studio</span>
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=400&q=80" alt="House 18">
+        </div>
+        <div class="card-content">
+          <h3>Urban Studio Apartment</h3>
+          <div class="price">$95,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 1 Bed</span><span><i class="fa-solid fa-bath"></i> 1 Bath</span></div>
+          <button class="btn" onclick="showHouse('h18')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Ultra Luxury</span>
+          <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=400&q=80" alt="House 19">
+        </div>
+        <div class="card-content">
+          <h3>Golf Course Estate Mansion</h3>
+          <div class="price">$2,950,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 6 Beds</span><span><i class="fa-solid fa-bath"></i> 8 Baths</span></div>
+          <button class="btn" onclick="showHouse('h19')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Terrace</span>
+          <img src="https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?auto=format&fit=crop&w=400&q=80" alt="House 20">
+        </div>
+        <div class="card-content">
+          <h3>4-Bedroom Cornerpiece</h3>
+          <div class="price">$595,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 5 Baths</span></div>
+          <button class="btn" onclick="showHouse('h20')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Eco Friendly</span>
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80" alt="House 21">
+        </div>
+        <div class="card-content">
+          <h3>Eco-Friendly Smart Duplex</h3>
+          <div class="price">$850,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 4 Baths</span></div>
+          <button class="btn" onclick="showHouse('h21')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Vintage</span>
+          <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=400&q=80" alt="House 22">
+        </div>
+        <div class="card-content">
+          <h3>Vintage 3-Bedroom Bungalow</h3>
+          <div class="price">$240,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 3 Beds</span><span><i class="fa-solid fa-bath"></i> 2 Baths</span></div>
+          <button class="btn" onclick="showHouse('h22')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">High Demand</span>
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=400&q=80" alt="House 23">
+        </div>
+        <div class="card-content">
+          <h3>Executive 4-Bedroom Triplex</h3>
+          <div class="price">$720,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 4 Beds</span><span><i class="fa-solid fa-bath"></i> 5 Baths</span></div>
+          <button class="btn" onclick="showHouse('h23')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrapper">
+          <span class="card-badge">Luxury</span>
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80" alt="House 24">
+        </div>
+        <div class="card-content">
+          <h3>The Royal Onyx Estate</h3>
+          <div class="price">$3,500,000</div>
+          <div class="card-meta"><span><i class="fa-solid fa-bed"></i> 7 Beds</span><span><i class="fa-solid fa-bath"></i> 9 Baths</span></div>
+          <button class="btn" onclick="showHouse('h24')">View Details <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimonials-section">
+    <div class="container" style="padding-top:0; padding-bottom:0;">
+      <h2 class="section-title" style="color: #fff;">Institutional Endorsements</h2>
+      <p class="section-subtitle" style="color: #94a3b8;">Read verified accounts from institutional fund managers, long-term luxury lessors, and real estate asset partners.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>"SML Property Management optimized our Class-A luxury portfolios within months. Their preventive maintenance programs decreased operational expenditure metrics significantly."</p>
+          <div class="client-info">
+            <div class="client-avatar" style="background: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80') center/cover;"></div>
+            <div>
+              <h4>Marcus Vance</h4>
+              <span style="font-size:0.8rem; color:#64748b;">Managing Director, Vanguard Trust</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"The single-point contact ledger system gives our family offices full transparency over luxury assets distributed across various geographical locations."</p>
+          <div class="client-info">
+            <div class="client-avatar" style="background: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80') center/cover;"></div>
+            <div>
+              <h4>Elena Rostova</h4>
+              <span style="font-size:0.8rem; color:#64748b;">Asset Allocation Lead, Rostova Capital</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Their background check frameworks are elite. Tenant retention rates have reached historical peaks, ensuring predictable monthly dividend yields."</p>
+          <div class="client-info">
+            <div class="client-avatar" style="background: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80') center/cover;"></div>
+            <div>
+              <h4>Jonathan Wright</h4>
+              <span style="font-size:0.8rem; color:#64748b;">Principal General Partner, Nexus Realty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div style="text-align: center;">
+      <h2 class="section-title">Frequently Asked Structural Questions</h2>
+      <p class="section-subtitle" style="margin-left:auto; margin-right:auto;">Clarifying operations, emergency engineering response, escrow allocations, and tenant mitigation frameworks.</p>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">How does SML calculate monthly management operational allocations? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-answer">Our corporate fee structures scale directly with property classifications, volume arrays, and required site parameters. Standard structural assignments range between 6% to 10% of gross receipts, documented cleanly via real-time owner ledgers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">What emergency systems are deployed for overnight repair notifications? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-answer">SML maintains active 24/7 localized engineering teams ready to handle structural breakdowns, electrical grid faults, high-volume plumbing failures, and HVAC architectural overhauls instantly upon algorithmic detection.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Are international investor accounts fully integrated with regulatory guidelines? <i class="fa-solid fa-plus"></i></div>
+        <div class="faq-answer">Yes, our digital banking infrastructure supports multi-currency conversion layers, cross-border corporate distribution pipelines, institutional escrow handling, and compliance forms tracking.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="property-details-container"></div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="logo-container" style="margin-bottom:20px;">
+        <img src="image/logo.png" class="app-logo" alt="SML Property Management Logo">
+      </a>
+      <p style="font-size:0.9rem; line-height:1.8;">Enterprise-grade real estate management systems securing luxury portfolios, minimizing architectural operational risks, and maximizing long-term asset appreciation loops across institutional fields.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Our Portfolio Areas</h4>
+      <ul>
+        <li><a href="services.html">Residential Core</a></li>
+        <li><a href="services.html">Commercial Logistics</a></li>
+        <li><a href="services.html">Industrial Facilities</a></li>
+        <li><a href="services.html">Smart Penthouse Assortments</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Corporate Systems</h4>
+      <ul>
+        <li><a href="about.html">Executive Team</a></li>
+        <li><a href="services.html">Asset Engineering</a></li>
+        <li><a href="contact.html">Escrow Verification</a></li>
+        <li><a href="about.html">Regulatory Compliance</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+    
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; @ 2026 SML Property Management Services. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+const images = {
+  h1: ["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"],
+  h2: ["https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80"],
+  h3: ["https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"],
+  h4: ["https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"],
+  h5: ["https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80"],
+  h6: ["https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1502672016832-3f11204859ce?auto=format&fit=crop&w=800&q=80"],
+  h7: ["https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"],
+  h8: ["https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"],
+  h9: ["https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"],
+  h10: ["https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80"],
+  h11: ["https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"],
+  h12: ["https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"],
+  h13: ["https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"],
+  h14: ["https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"],
+  h15: ["https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"],
+  h16: ["https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80"],
+  h17: ["https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"],
+  h18: ["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=800&q=80"],
+  h19: ["https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?auto=format&fit=crop&w=800&q=80"],
+  h20: ["https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80"],
+  h21: ["https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=800&q=80"],
+  h22: ["https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"],
+  h23: ["https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"],
+  h24: ["https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80", "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"]
+};
+
+const houseData = {
+  h1: { title: "Modern 4-Bedroom Duplex", price: "$550,000", desc: "Luxury duplex with modern structural finishing, stamped concrete floors, and CCTV gated security protocols.", beds: 4, baths: 4 },
+  h2: { title: "3-Bedroom Bungalow", price: "$295,000", desc: "Comfortable family bungalow inside a highly secure gated neighborhood with constant treated water supply.", beds: 3, baths: 3 },
+  h3: { title: "Mini Flat Apartment", price: "$115,000", desc: "Affordable modern city apartment optimized for tech professionals with high potential rental ROI yields.", beds: 1, baths: 1 },
+  h4: { title: "Luxury Penthouse", price: "$780,000", desc: "High-rise luxury masterpiece apartment offering panoramic city views and premium rooftop terrace access.", beds: 3, baths: 4 },
+  h5: { title: "Serviced 2-Bedroom Flat", price: "$225,000", desc: "Fully serviced residential apartment with 24/7 alternative solar backup systems and armed security guards.", beds: 2, baths: 2 },
+  h6: { title: "Self-Contain Studio", price: "$55,000", desc: "Compact studio configuration perfect for minimalists seeking structural accessibility near commercial centers.", beds: 1, baths: 1 },
+  h7: { title: "5-Bedroom Fully Detached", price: "$980,000", desc: "Spacious luxury compound featuring a private Boys Quarter structure and automated entry gateways.", beds: 5, baths: 6 },
+  h8: { title: "Terrace Duplex", price: "$460,000", desc: "Contemporary architectural design layout integrated inside a peaceful luxury neighborhood zone.", beds: 4, baths: 4 },
+  h9: { title: "Executive Smart Mansion", price: "$1,550,000", desc: "Fully integrated smart home framework boasting voice-controlled ambient workflows and an infinity pool.", beds: 6, baths: 7 },
+  h10: { title: "Semi-Detached 4-Bedroom", price: "$580,000", desc: "Generous layout design offering customizable kitchen islands and premium interior marble stylings.", beds: 4, baths: 5 },
+  h11: { title: "3-Bedroom Loft Apartment", price: "$340,000", desc: "Industrial aesthetic loft design featuring massive windows for extensive natural ambient light illumination.", beds: 3, baths: 3 },
+  h12: { title: "Cozy 1-Bedroom Apartment", price: "$145,000", desc: "Charming isolated flat unit layout emphasizing secure underground parking access points.", beds: 1, baths: 1 },
+  h13: { title: "Waterfront Luxury Villa", price: "$2,400,000", desc: "Picturesque waterfront structure with specialized high-grade reinforced shoreline structural engineering.", beds: 5, baths: 6 },
+  h14: { title: "Classic 4-Bedroom Bungalow", price: "$310,000", desc: "A timeless traditional family bungalow layout presenting massive backyard garden expansion zones.", beds: 4, baths: 3 },
+  h15: { title: "Contemporary 3-Bedroom Flat", price: "$260,000", desc: "State of the art geometric design features featuring custom European styled cabinetry installations.", beds: 3, baths: 3 },
+  h16: { title: "Premium 2-Bedroom Maisonette", price: "$395,000", desc: "Split-level luxury architecture designed deliberately for optimizing spatial airflow configurations.", beds: 2, baths: 3 },
+  h17: { title: "Suburban Family House", price: "$425,000", desc: "Quiet low-traffic layout optimized perfectly for raising families near highly-rated elite institutions.", beds: 4, baths: 4 },
+  h18: { title: "Urban Studio Apartment", price: "$95,000", desc: "Central downtown location presenting high asset appreciation values over minimal timelines.", beds: 1, baths: 1 },
+  h19: { title: "Golf Course Estate Mansion", price: "$2,950,000", desc: "Ultra-high net worth asset overlooking championship fairways with bulletproof panic room modifications.", beds: 6, baths: 8 },
+  h20: { title: "4-Bedroom Cornerpiece", price: "$595,000", desc: "Exclusive corner-lot configuration allowing duplicate entry access frameworks and extra land area.", beds: 4, baths: 5 },
+  h21: { title: "Eco-Friendly Smart Duplex", price: "$850,000", desc: "Equipped with advanced zero-emission thermal regulation parameters and structural green systems.", beds: 4, baths: 4 },
+  h22: { title: "Vintage 3-Bedroom Bungalow", price: "$240,000", desc: "Retro brick accents meeting modern internal transformations within clean communal perimeters.", beds: 3, baths: 2 },
+  h23: { title: "Executive 4-Bedroom Triplex", price: "$720,000", desc: "Spanning three vertical floors with dedicated home cinema theater basements and private elevator shafts.", beds: 4, baths: 5 },
+  h24: { title: "The Royal Onyx Estate", price: "$3,500,000", desc: "The peak of opulent architecture. Features custom imported Italian facades, 9-car showrooms, and security outposts.", beds: 7, baths: 9 }
+};
+
+const indexMap = {};
+
+function initDetailsHTML() {
+  const container = document.getElementById('property-details-container');
+  let html = '';
+  
+  for (const [id, data] of Object.entries(houseData)) {
+    indexMap[id] = 0;
+    html += `
+      <div id="${id}" class="hidden container">
+        <button class="btn btn-secondary" style="width:auto; margin-bottom: 25px;" onclick="showHome()">
+          <i class="fa-solid fa-arrow-left"></i> Back to Properties
+        </button>
+        <div class="details-grid">
+          <div class="gallery">
+            <img id="img-${id}" src="${images[id][0]}" alt="${data.title}">
+            <div class="gallery-controls">
+              <button class="btn-circle" onclick="prevImg('${id}')"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="btn-circle" onclick="nextImg('${id}')"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="details-sidebar">
+            <h2>${data.title}</h2>
+            <div class="price-tag">${data.price}</div>
+            <p>${data.desc}</p>
+            <div class="specs-list">
+              <div class="specs-item"><i class="fa-solid fa-bed" style="color:var(--primary)"></i> <strong>Bedrooms:</strong> ${data.beds}</div>
+              <div class="specs-item"><i class="fa-solid fa-bath" style="color:var(--primary)"></i> <strong>Bathrooms:</strong> ${data.baths}</div>
+              <div class="specs-item"><i class="fa-solid fa-shield-halved" style="color:var(--primary)"></i> <strong>Security:</strong> Gated Matrix</div>
+              <div class="specs-item"><i class="fa-solid fa-bolt" style="color:var(--primary)"></i> <strong>Power:</strong> 24/7 Redundant</div>
+            </div>
+            <a href="contact.html" class="btn">
+              <i class="fa-solid fa-envelope"></i> Book Inspection Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  container.innerHTML = html;
+}
+
+function showHouse(id) {
+  document.getElementById('home').classList.add('hidden');
+  document.querySelectorAll('#property-details-container .container').forEach(c => c.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+
+function showHome() {
+  document.getElementById('home').classList.remove('hidden');
+  document.querySelectorAll('#property-details-container .container').forEach(c => c.classList.add('hidden'));
+  window.scrollTo(0, 0);
+}
+
+function updateImg(id) {
+  document.getElementById('img-' + id).src = images[id][indexMap[id]];
+}
+
+function nextImg(id) {
+  indexMap[id] = (indexMap[id] + 1) % images[id].length;
+  updateImg(id);
+}
+
+function prevImg(id) {
+  indexMap[id] = (indexMap[id] - 1 + images[id].length) % images[id].length;
+  updateImg(id);
+}
+
+// Modern Accordion UI Logic with smooth transitions
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const icon = q.querySelector('i');
+    const item = q.parentElement;
+    
+    if(item.classList.contains('active')) {
+      item.classList.remove('active');
+      icon.className = 'fa-solid fa-plus';
+    } else {
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        const activeIcon = i.querySelector('.faq-question i');
+        if(activeIcon) activeIcon.className = 'fa-solid fa-plus';
+      });
+      
+      item.classList.add('active');
+      icon.className = 'fa-solid fa-minus';
+    }
+  });
+});
+
+// Structural initialization
+initDetailsHTML();
+</script>
+</body>
+</html>

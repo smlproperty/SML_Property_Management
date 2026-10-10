@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<!-- Google AdSense: site-wide publisher script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8072233087398262" crossorigin="anonymous"></script>
+<title>Our Services | SML Property Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+  --primary: #0066cc;
+  --primary-hover: #0052a3;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --radius: 12px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--text-main); line-height: 1.6; }
+
+header { background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1280px; margin: 0 auto; padding: 12px 24px; }
+
+/* BRAND IMAGE LOGO STYLING */
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.app-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+nav ul { list-style: none; display: flex; gap: 24px; }
+nav a { color: #94a3b8; text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition); }
+nav a:hover, nav a.active { color: #fff; }
+
+.inner-hero {
+  background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover; background-position: center; color: white; padding: 80px 24px; text-align: center;
+}
+.inner-hero h1 { font-size: 2.75rem; font-weight: 700; margin-bottom: 15px; }
+.inner-hero p { font-size: 1.1rem; color: #94a3b8; max-width: 600px; margin: 0 auto; }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 80px 24px; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 60px; }
+.service-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition); display: flex; flex-direction: column; }
+.service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: #cbd5e1; }
+.service-img-wrapper { width: 100%; height: 220px; background: #cbd5e1; overflow: hidden; }
+.service-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+.service-card:hover .service-img-wrapper img { transform: scale(1.05); }
+.service-content { padding: 30px; flex-grow: 1; display: flex; flex-direction: column; }
+.service-icon-label { display: flex; align-items: center; gap: 10px; color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.service-content h3 { font-size: 1.4rem; color: var(--dark); margin-bottom: 15px; }
+.service-content p { color: var(--text-main); font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6; }
+.service-features-list { list-style: none; margin-top: auto; border-top: 1px solid var(--border); padding-top: 20px; }
+.service-features-list li { font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.service-features-list li i { color: #10b981; }
+
+/* Workflow Methodology Framework styling */
+.methodology { background: #0f172a; color: #fff; padding: 80px 24px; text-align: center; }
+.steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1280px; margin: 40px auto 0 auto; }
+.step-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 30px; border-radius: var(--radius); position: relative; text-align: left; }
+.step-number { font-size: 3rem; font-weight: 700; color: rgba(0, 102, 204, 0.3); position: absolute; top: 15px; right: 20px; }
+.step-card h4 { font-size: 1.2rem; margin-bottom: 15px; color: #fff; }
+.step-card p { font-size: 0.9rem; color: #cbd5e1; line-height: 1.6; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 24px; background: var(--primary); color: white; border: none; border-radius: 8px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: var(--transition); width: 100%; text-align: center; margin-top: 20px; }
+.btn:hover { background: var(--primary-hover); }
+
+footer { background: #0f172a; color: #64748b; padding: 60px 24px 30px 24px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+.footer-col h4 { color: #fff; font-size: 1.1rem; margin-bottom: 20px; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a { color: #94a3b8; text-decoration: none; }
+.footer-col ul li a:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; margin-top: 40px; text-align: center; font-size: 0.9rem; }
+
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .services-grid, .steps-grid, .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="image/logo.png" class="app-logo" alt="SML Property Management Logo">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="inner-hero">
+  <h1>Enterprise Management Frameworks</h1>
+  <p>Systematic, high-fidelity engineering and property oversight workflows engineered to insulate corporate assets.</p>
+</section>
+
+<div class="container">
+  <div class="services-grid">
+    
+    <div class="service-card">
+      <div class="service-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="High-Rise Residential Core Asset Portfolio Management">
+      </div>
+      <div class="service-content">
+        <div class="service-icon-label"><i class="fa-solid fa-house-chimney"></i> Portfolio Asset Oversight</div>
+        <h3>Luxury Residential Core</h3>
+        <p>Complete property lifecycle management for elite residential complexes, individual estates, and premium high-rise penthouses across primary metropolitan sub-sectors.</p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> Automated rental collections layout</li>
+          <li><i class="fa-solid fa-circle-check"></i> Structured tenancy lease modeling</li>
+          <li><i class="fa-solid fa-circle-check"></i> Gated structural oversight frameworks</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Inspection Appointment</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Commercial Corporate Office Tower Logistical Operations">
+      </div>
+      <div class="service-content">
+        <div class="service-icon-label"><i class="fa-solid fa-briefcase"></i> Commercial Operations</div>
+        <h3>Commercial Logistics Tower</h3>
+        <p>Minimizing vacancies and streamlining facilities management for corporate commercial spaces, technology parks, and high-volume office centers.</p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> B2B vendor network integration</li>
+          <li><i class="fa-solid fa-circle-check"></i> Triple-Net (NNN) allocation tracks</li>
+          <li><i class="fa-solid fa-circle-check"></i> Facility energy footprint mitigation</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Inspection Appointment</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=600&q=80" alt="Mechanical Facilities Electrical Maintenance Monitoring Systems">
+      </div>
+      <div class="service-content">
+        <div class="service-icon-label"><i class="fa-solid fa-wrench"></i> Preventive Engineering</div>
+        <h3>Structural Facility Systems</h3>
+        <p>Systematic scheduled inspections and real-time civil engineering tracking loops to eliminate structural failures before they disrupt capital performance metrics.</p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> 24/7 localized engineering teams</li>
+          <li><i class="fa-solid fa-circle-check"></i> Roof/HVAC lifecycle analysis</li>
+          <li><i class="fa-solid fa-circle-check"></i> Advanced smart automation pipelines</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Inspection Appointment</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Corporate Accounting Ledger Analytics Database Platform">
+      </div>
+      <div class="service-content">
+        <div class="service-icon-label"><i class="fa-solid fa-calculator"></i> Capital Accounting</div>
+        <h3>Financial Audit Control</h3>
+        <p>Transparent balance ledger tracking systems offering instant digital portal access to profit reporting matrices, automated disbursements, and tax filing modules.</p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> Instant digital profit portal data</li>
+          <li><i class="fa-solid fa-circle-check"></i> Automated direct payment setups</li>
+          <li><i class="fa-solid fa-circle-check"></i> Annual historical audit documentation</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Inspection Appointment</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <div class="service-card">
+      <div class="service-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Legal Regulatory Real Estate Advisory Documentations">
+      </div>
+      <div class="service-content">
+        <div class="service-icon-label"><i class="fa-solid fa-scale-balanced"></i> Regulatory Assurance</div>
+        <h3>Asset Eviction Insurance</h3>
+        <p>Complete compliance coverage managing tenant relationships, regulatory evictions, court enforcement procedures, and lease renewal agreements cleanly.</p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> Complete regulatory compliance</li>
+          <li><i class="fa-solid fa-circle-check"></i> Legal notice generation protocols</li>
+          <li><i class="fa-solid fa-circle-check"></i> Secure escrow retention models</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Inspection Appointment</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper">
+        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=600&q=80" alt="Tenant Risk Matrix Screening Background Checks">
+      </div>
+      <div class="service-content">
+        <div class="service-icon-label"><i class="fa-solid fa-user-check"></i> Credit Risk Screening</div>
+        <h3>High-Fidelity Underwriting</h3>
+        <p>Advanced algorithmic risk filters testing applicant asset liquidity matrices, criminal history loops, and multi-state past eviction databanks.</p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> Identity verification algorithms</li>
+          <li><i class="fa-solid fa-circle-check"></i> Income liquidity ratio vetting</li>
+          <li><i class="fa-solid fa-circle-check"></i> Past landlord reference verification</li>
+        </ul>
+        <a href="contact.html" class="btn">Book Inspection Appointment</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section class="methodology">
+  <div class="container" style="padding-top:0; padding-bottom:0;">
+    <h2 style="font-size: 2rem; margin-bottom:10px;">Our Phased Management Integration Matrix</h2>
+    <p style="color: #94a3b8; max-width:600px; margin: 0 auto 40px auto;">How we systematically onboard, secure, and optimize real estate portfolios to maximize capital returns.</p>
+    
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <h4>Structural Audit Phase</h4>
+        <p>Our engineering division conducts complete diagnostic reviews of foundation blocks, HVAC setups, plumbing designs, and safety grid layouts.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <h4>Financial Alignment</h4>
+        <p>We synchronize banking paths, configure real-time ledger accounting flows, establish escrow parameters, and upload legacy asset information.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <h4>Tenant Risk Optimization</h4>
+        <p>Active tenant portfolios undergo strict lease alignment formatting while vacancies transition into target-market placement pipelines.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">04</div>
+        <h4>Preventative Shield Active</h4>
+        <p>Routine maintenance schedules automate, cloud reporting tracking systems wake, and full legal corporate asset protection assumes control.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="logo-container" style="margin-bottom:20px;">
+        <img src="image/logo.png" class="app-logo" alt="SML Property Management Logo">
+      </a>
+      <p style="font-size:0.9rem; line-height:1.8;">Enterprise-grade real estate management systems securing luxury portfolios, minimizing architectural operational risks, and maximizing long-term asset appreciation loops across institutional fields.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Our Portfolio Areas</h4>
+      <ul>
+        <li><a href="services.html">Residential Core</a></li>
+        <li><a href="services.html">Commercial Logistics</a></li>
+        <li><a href="services.html">Industrial Facilities</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Corporate Systems</h4>
+      <ul>
+        <li><a href="about.html">Executive Team</a></li>
+        <li><a href="services.html">Asset Engineering</a></li>
+        <li><a href="contact.html">Escrow Verification</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+    
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; @ 2026 SML Property Management Services. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
